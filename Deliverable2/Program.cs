@@ -7,7 +7,7 @@ double waterCount = 0;
     Console.WriteLine("Welcome to Larry's Buffet, live like larry for just $9.99 per person!");
     Console.WriteLine("We offer two beverage options: coffee and water. We do not charge extra for water, coffee costs $2.00.");
     Console.WriteLine("How many people in your party? We can accomidate parties up to 6.");
-    double partySize = int.Parse(Console.ReadLine());
+    int partySize = int.Parse(Console.ReadLine());
 
     if (partySize >= 7)
     {
@@ -27,7 +27,6 @@ double waterCount = 0;
         Console.WriteLine("A table for " + partySize + "! Please, come take a seat.");
         Console.WriteLine("Let's get started with drinks. We have coffee and water.");
 
-        //int guestNumber = 1;
 
         for (double guestNumber = 1; guestNumber <= partySize; guestNumber++)
         {
